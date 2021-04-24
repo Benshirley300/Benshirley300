@@ -53,6 +53,6 @@ a {
     color: #e76f51;
 }
 
-a.hover {
+a:hover {
     color: red;
 }
