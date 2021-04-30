@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1048px)
+{
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #alignment {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+
+}

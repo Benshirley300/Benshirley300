@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;}
+
+
+header, footer, h2, h3 {
+    margin: 2.5px 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+
+    border-radius: 10px;
+    padding-bottom: 3px;
+}
+
+h1 {
+    font-weight: 6000;
+    margin-bottom: 0;
+}
+h2 {
+    font-weight: 1000;
+}
+
+figure {
+    max-width: 96%;
+    margin: 5px 2%;
+    
+}
+figure img {
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    color: #555;
+    font-size: .8rem;
+    font-family: 'Merriweather', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', sans-serif;
+    margin: 5px 2%;
+}
+
+#white-space, #alignment, #visual-hierarchy {
+    margin: 5px 2%;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
+footer {
+    text-align: center;
+    padding-top: 3px;
+}

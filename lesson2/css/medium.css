@@ -1,0 +1,24 @@
+@media only screen and (min-width: 560px)
+{
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #white-space {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #visual-hierarchy {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #alignment {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    header {
+        text-align: center;
+    }
+
+}
