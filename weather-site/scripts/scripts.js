@@ -1,2 +1,9 @@
+function toggleMenu()
+{
+    document.getElementById("mainNav").classList.toggle("hidden");
+}
 
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('hidden')};
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+console.log(currentYear);
+document.getElementById('current-year').innerHTML = currentYear;

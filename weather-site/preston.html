@@ -11,21 +11,35 @@
     <link rel="stylesheet" href="css/large.css">
   </head>
 <body>
-    <header>
-        <h1>Preston</h1>
+    <header class="clearfix">
+        <a href="#"><img id="logo" src="images/logo.png"></a>
+        <div>
+          <h1>Outside Weather Now</h1>
+          <h2>What's the Weather Outside?</h2>
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li class="active hidden"><a href="#">Preston</a></li>
-            <li class="hidden"><a href="#">Soda Springs</a></li>
-            <li class="hidden"><a href="#">Fish Haven</a></li>
-            <li class="hidden"><a href="#">Storm Center</a></li>
-            <li class="hidden"><a href="#">Gallery</a></li>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul class="clearfix hidden" id="mainNav">
+            <li><a href="#" id="homeNav">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li class=""><a href="#">Soda Springs</a></li>
+            <li class=""><a href="#">Fish Haven</a></li>
+            <li class=""><a href="#">Storm Center</a></li>
+            <li class=""><a href="#">Gallery</a></li>
         </ul>
-
     </nav>
-
-
+    <main>
+      <h1>Preston</h1>
+      <ul class="mainSectionList">
+        <li>Hero and summary will go here.</li>
+        <li>Article and images will go here.</li>
+        <li>Contact us with address and map will go here.</li>
+      </ul>
+    </main>
+    <footer>
+      <p>Ben Shirley &middot; &copy; <span id="current-year"></span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

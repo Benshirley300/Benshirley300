@@ -1,26 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
+header {
+    background-color: #cacaca;
+}
+
+#logo {
+    width: 75px;
+    float: left;
+}
+
+header h1, header h2 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header h1 {font-size: 1.3rem;}
+header h2 {font-size: 1rem;}
 nav {
     background-color: #8ecae6;
-    
-
+    text-align: center;
 }
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #000;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 nav ul li a {
     flex: 1;
     color: #000000;
-    padding: 10px 10px;
+    padding: .8rem 2%;
     text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-    
+    font-size: 1.2rem;
+    display: block;
 }
 
 
@@ -36,4 +57,32 @@ nav ul li.active a {
 .hidden {
     display: none;
 }
+
+main {
+    padding: 0 2%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+main ul {
+    list-style: none;
+}
+main ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: #cacaca;
+}
+
+footer {
+    text-align: center;
+    background-color: #8ecae6;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /*--
