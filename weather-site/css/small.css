@@ -1,58 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-body {
-    max-width: 800px;
-    margin: auto;
-    border: solid;
-    border-radius: 10px;
-    padding: 10px;
+
+nav {
+    background-color: #8ecae6;
+    
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
 }
 
-
-h2 {
-    font-size: 50px;
+nav ul li a {
+    flex: 1;
+    color: #000000;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: .9rem;
     text-align: center;
-    font-family: 'Merriweather', 'Brush Script MT', cursive;
-    color: #e9c46a;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    background-color:  #264653;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-main {
-    font-family: 'Montserrat', 'Tahoma', sans-serif;
+    
 }
 
 
-footer {
-    font-family: 'Merriweather', 'Brush Script MT', cursive;
-    text-align: center;
-    clear: both;
-    color: #e9c46a;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #264653;
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #219ebc;
+    color: #fff;
 }
 
-a {
-    color: #e76f51;
+.hidden {
+    display: none;
 }
-
-a:hover {
-    color: red;
-}
-
-#headshot {
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #222;
-    margin: 10px 8em 0 8em;
-    max-width: 16em;
-    width: 150px;
-}
+/*--
