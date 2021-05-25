@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page for the weather in Preston.">
+    <title>Preston: Outside Weather Now</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+<body>
+    <div id="fridayAnnouncement">Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <a href="#"><img id="logo" src="images/logo.png" alt="Logo image of sun"></a>
+        <div>
+          <h1>Outside Weather Now</h1>
+          <h2>What's the Weather Outside?</h2>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul class="clearfix hidden" id="mainNav">
+            <li><a href="#" id="homeNav">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li class=""><a href="#">Soda Springs</a></li>
+            <li class=""><a href="#">Fish Haven</a></li>
+            <li class=""><a href="#">Storm Center</a></li>
+            <li class=""><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1>Preston</h1>
+      <div class="heroContainer">
+        <img class="summaryImage" src="images/pexels-evgeny-tchebotarev-2187605.jpg" alt="Village picture">
+          <div class="summaryGrid">
+            <h3 class="summaryTitle">Weather Summary:</h3>
+            <p class="summary1">Currently:</p>
+            <p class="summary2">Sunny</p>
+            <p class="summary3">High:</p>
+            <p class="summary4">76 &#xb0;F</p>
+            <p class="summary5">Wind Chill</p>
+            <p class="summary6">&#xb0;F</p>
+            <p class="summary7">Humidity</p>
+            <p class="summary8">70%</p>
+            <p class="summary9">Wind Speed:</p>
+            <p class="summary10">5 mph</p>
+        </div>
+      </div>
+      <section class="article">
+        <figure>
+          <img src="images/pexels-helena-lopes-697243.jpg" alt="Group of people">
+          <figcaption>
+            Friends in front of sunset.
+          </figcaption>
+        </figure>
+        <h3 class="articleTitle">Summer Days</h3>
+        <p class="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus nisi at leo ornare 
+          fringilla. Nullam at ex euismod ipsum rhoncus facilisis vitae quis felis. Nullam sed sollicitudin augue, eu 
+          consequat sem. Nulla ac purus consequat, malesuada arcu a, dignissim lectus. Quisque sagittis laoreet erat nec 
+          pharetra. Morbi vulputate lectus at varius mollis. Nullam posuere tristique dui, in sollicitudin leo consectetur 
+          eu. Etiam ac sapien maximus diam vulputate rhoncus. Proin auctor placerat nisl, vel venenatis purus tempor vel.
+
+          Donec dui elit, pretium ut accumsan mattis, fringilla ac mauris. Morbi cursus mattis aliquam. Suspendisse
+           rhoncus ante vulputate, mattis justo sed, fermentum justo. Cras mattis risus maximus velit aliquet, at aliquet 
+           ante convallis. Nullam vitae ultricies neque, nec facilisis nunc. Aliquam erat volutpat. Nullam nisi sapien, 
+           laoreet in nibh id, molestie malesuada eros. Ut dapibus felis sit amet sapien ultrices, vitae dictum orci pharetra. 
+           Donec finibus consequat neque vitae vestibulum. Nulla sed tortor ornare, malesuada tortor vitae, convallis mi. 
+           Ut vitae dapibus lorem. <a href="#">Read the rest of the article here!</a>
+        </p>
+      </section>
+      <section class="contactUs">
+        <h5>Outside Weather Now</h5>
+        <p></p>
+
+      </section>
+      <ul class="mainSectionList">
+        <li>Contact us with address and map will go here.</li>
+      </ul>
+    </main>
+    <footer>
+      <p>Ben Shirley &middot; &copy; <span id="currentYear"></span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

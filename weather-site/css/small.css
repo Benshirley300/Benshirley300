@@ -79,6 +79,9 @@ footer {
     font-family: "Montserrat", sans-serif;
 }
 
+footer p {
+    padding: 10px;
+}
 
 .clearfix::after {
     content: "";

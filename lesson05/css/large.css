@@ -1,0 +1,12 @@
+@media (min-width: 1140px)
+{
+    #friday-announcement {
+        width: 70rem;
+        margin: 0 auto;
+    }
+    header, nav, footer, main {
+        width: 70rem;
+        margin: 0 auto;
+        
+    }
+}
