@@ -1,0 +1,16 @@
+#party {
+    border-bottom: 1px solid black;
+    height: 200px;
+}
+input {
+    border: 1px solid black;
+}
+
+@media (min-width: 32em)
+{
+
+    #party, #main {
+        width: 600px;
+        margin: auto;
+    }
+}
