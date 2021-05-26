@@ -109,6 +109,8 @@ main ul li {
 .summary9 {grid-column: 1 / 2; grid-row: 6 / 7; text-align: right; margin: 0; padding: 0;}
 .summary10 {grid-column: 2 / 3; grid-row: 6 / 7; margin: 0; padding: 0;}
 
+.forecast {display:none;}
+
 .article {
     width: 100%; margin: 0; padding: 0; border: black 1px solid; border-radius: 10px; background-color: #8ecae6;
 }
@@ -121,10 +123,22 @@ figcaption {
 }
 .article p, .article h3 {margin: 0; padding: 5px;}
 
-footer {
-    text-align: center;
+.contactUs {
+    border: 1px solid black;
     background-color: #8ecae6;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.contactUs figure {margin: 0; padding: 5px;}
+.contactUs figure img {width: 100%; border-radius: 10px 10px 0 0;}
+
+footer {
+    border: 1px solid black;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
+    padding: 3px;
 }
 
 

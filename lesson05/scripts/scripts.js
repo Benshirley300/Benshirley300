@@ -33,3 +33,10 @@ else
 {
     document.getElementById("fridayAnnouncement").classList.remove("not-friday");
 }
+
+
+for (i = 1; i <= 5; ++i)
+{
+    forecast = document.getElementById("day" + i);
+    forecast.innerText = weekday[currentDate.getDay() + i - 1];
+}
