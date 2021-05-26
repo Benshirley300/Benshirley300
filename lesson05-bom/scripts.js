@@ -13,6 +13,7 @@ function storeVerse()
     };
     li.appendChild(button);
     ul.appendChild(li);
+   
     document.getElementById("favchap").focus();
 }
 
