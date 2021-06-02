@@ -31,15 +31,14 @@
         display: grid;
         grid-template-columns: auto 600px;
     }
-    .contactUs figure {
+    #map {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
         float: none;
         max-width: 600px;
         margin: 0;
-        padding: 5px;
+        padding: 10px;
     }
-    .contactUs figure img {width: 100%; border-radius: 10px 10px 0 0;}
     .contactUsTitle {
         padding: 2%;
         font-size: 2rem;
