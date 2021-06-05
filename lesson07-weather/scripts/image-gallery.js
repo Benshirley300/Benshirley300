@@ -56,3 +56,11 @@ let month = monthName[currentDate.getMonth()];
 let currentYear = currentDate.getFullYear();
 console.log(currentYear);
 document.getElementById('currentYear').innerHTML = dayofWeek + ", " + dayOfMonth + " " + month + " " + currentYear;
+
+WebFont.load({
+    google: {
+      families: [
+         'Montserrat'
+      ]
+    }
+  });

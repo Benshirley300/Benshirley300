@@ -153,7 +153,7 @@ figcaption {
     display: block;
     margin: 10px;
     filter: blur(0em);
-    transition: filter 1s;
+    transition: filter 10s;
 }
 [data-src] {
     filter: blur(0.2em);
