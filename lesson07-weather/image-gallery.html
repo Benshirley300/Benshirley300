@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page for the weather in Preston.">
+    <title>Preston: Outside Weather Now</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+<body>
+    <header class="clearfix">
+        <a href="#"><img id="logo" src="images/logo.png" alt="Logo image of sun"></a>
+        <div>
+          <h1>Outside Weather Now</h1>
+          <h2>What's the Weather Outside?</h2>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul class="clearfix hidden" id="mainNav">
+            <li><a href="#" id="homeNav">Home</a></li>
+            <li class=""><a href="preston.html">Preston</a></li>
+            <li class=""><a href="#">Soda Springs</a></li>
+            <li class=""><a href="#">Fish Haven</a></li>
+            <li class=""><a href="#">Storm Center</a></li>
+            <li class="active"><a href="image-gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1 id="imageGalleryTitle">Image Gallery</h1>
+      <div class="imageContainer">
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/forest.png" alt="forest">
+          <figcaption class="figcaption-hide">A beautiful forest.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/lightning.png" alt="lightning">
+          <figcaption class="figcaption-hide">Breathtaking lightning.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/mountains.png" alt="mountains">
+          <figcaption class="figcaption-hide">A serene snowy mountainscape.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/puddle.png" alt="puddle">
+          <figcaption class="figcaption-hide">Rain splashing in a puddle.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/rainbow.png" alt="rainbow">
+          <figcaption class="figcaption-hide">After rain comes the...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/snowy-forest.png" alt="snowy forest">
+          <figcaption class="figcaption-hide">A bird's eye view.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/snowy-river.png" alt="snowy river">
+          <figcaption class="figcaption-hide">Winter's Beauty</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/snowy-road.png" alt="snowy road">
+          <figcaption class="figcaption-hide">The path less traveled.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image-gallery/placeholder.png" data-src="images/image-gallery/sunny-day.png" alt="sunny day">
+          <figcaption class="figcaption-hide">A perfect day!</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>Ben Shirley &middot; &copy; <span id="currentYear"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/image-gallery.js"></script>
+</body>
+</html>
+
