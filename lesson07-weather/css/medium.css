@@ -91,11 +91,12 @@
     .imageContainer {
         display: grid;
         grid-template-columns: 47% 47%;
+        grid-template-rows: repeat(6, 270px);
         grid-gap: 2%;
         justify-content: center;
         align-items: center;
-        margin: 0;
         padding: 0;
+        margin: 0;
     }
     #imageGrid1 {
         grid-column: 1 / 2;
