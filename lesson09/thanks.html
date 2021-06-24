@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page for the weather in Preston.">
+    <title>Storm Center: Outside Weather Now</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+<body>
+    <header class="clearfix">
+        <a href="#"><img id="logo" src="images/logo.png" alt="Logo image of sun"></a>
+        <div>
+          <h1>Outside Weather Now</h1>
+          <h2>What's the Weather Outside?</h2>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul class="clearfix hidden" id="mainNav">
+          <li class=""><a href="home.html" id="homeNav">Home</a></li>
+          <li class=""><a href="preston.html">Preston</a></li>
+          <li class=""><a href="#">Soda Springs</a></li>
+          <li class=""><a href="#">Fish Haven</a></li>
+          <li class="active"><a href="storm-center.html">Storm Center</a></li>
+          <li class=""><a href="image-gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Thank You!</h1>
+      <p>Thank you for reporting this storm. We will investigate and put our a notice for our citizens.</p>
+    </main>
+    <footer>
+      <p>Ben Shirley &middot; &copy; <span id="currentYear"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/storm-center.js"></script>
+</body>
+</html>
