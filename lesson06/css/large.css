@@ -9,7 +9,8 @@
         margin: 0 auto;
         
     }
-
+    .heroContainer {width: 100%;}
+    .summaryImage {max-width: 100%;}
     .article {
         display: grid;
         grid-template-columns: auto 600px;
