@@ -25,7 +25,7 @@ function populateSection(town, passClass)
     let section = document.createElement('div');
     section.classList.add(passClass);
     let img = document.createElement('img');
-    img.setAttribute('src', "images/home-page/" + passClass + ".JPG");
+    img.setAttribute('src', "images/home-page/" + passClass + ".jpg");
     section.appendChild(img);
     let h1 = document.createElement('h1');
     h1.textContent = town.name;
