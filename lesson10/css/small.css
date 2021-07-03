@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+#fridayAnnouncement {
+    background-color: #ffb703;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.not-friday {
+    display: none;
+}
+
+header {
+    background-color: #cacaca;
+}
+#logo {
+    width: 75px;
+    float: left;
+}
+
+header h1, header h2 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header h1 {font-size: 1.3rem;}
+header h2 {font-size: 1rem;}
+nav {
+    background-color: #8ecae6;
+    text-align: center;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    flex: 1;
+    color: #000000;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #219ebc;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    padding: 0 2%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+main ul {
+    list-style: none;
+}
+main ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: #cacaca;
+}
+.heroContainer {position: relative; width: 100%; margin: 0; padding: 0;}
+.summaryImage {width: 100%; border-radius: 10px;}
+/*Weather Grid*/
+.summaryGrid {
+    display: grid; 
+    grid-template-columns: auto auto; 
+    column-gap: 1em;
+    row-gap: 0; 
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    color: white;
+    background: linear-gradient(90deg, rgba(2,0,36,.5) 0%, rgba(2,48,71,.5) 37%, rgba(0,212,255,.5) 88%);
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+.summaryTitle {grid-column: 1 / 3; grid-row: 1 / 2; margin: 0; padding: 0;}
+.summary1 {grid-column: 1 / 2; grid-row: 2 / 3; text-align: right; margin: 0; padding: 0;}
+#summary2 {grid-column: 2 / 3; grid-row: 2 / 3; margin: 0; padding: 0;}
+.summary3 {grid-column: 1 / 2; grid-row: 3 / 4; text-align: right; margin: 0; padding: 0;}
+#summary4 {grid-column: 2 / 3; grid-row: 3 / 4; margin: 0; padding: 0;}
+.summary5 {grid-column: 1 / 2; grid-row: 4 / 5; text-align: right; margin: 0; padding: 0;}
+#summary6 {grid-column: 2 / 3; grid-row: 4 / 5; margin: 0; padding: 0;}
+.summary7 {grid-column: 1 / 2; grid-row: 5 / 6; text-align: right; margin: 0; padding: 0;}
+#summary8 {grid-column: 2 / 3; grid-row: 5 / 6; margin: 0; padding: 0;}
+.summary9 {grid-column: 1 / 2; grid-row: 6 / 7; text-align: right; margin: 0; padding: 0;}
+#summary10 {grid-column: 2 / 3; grid-row: 6 / 7; margin: 0; padding: 0;}
+
+.forecast {display:none;}
+
+.article {
+    width: 100%; margin: 0; padding: 0; border: black 1px solid; border-radius: 10px; background-color: #8ecae6;
+}
+.article figure {margin: 0; padding: 5px;}
+.article figure img {width: 100%; border-radius: 10px 10px 0 0;}
+figcaption {
+    color: #555;
+    font-size: .8rem;
+    text-align: center;
+}
+.article p, .article h3 {margin: 0; padding: 5px;}
+
+.contactUs {
+    border: 1px solid black;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.contactUs figure {margin: 0; padding: 5px;}
+.contactUs figure img {width: 100%; border-radius: 10px 10px 0 0;}
+
+/* home-page css */
+#town-summaries {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+}
+#town-summaries div {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #8ecae6;
+    padding: 5px 2%;
+    margin: 5px 2%;
+}
+#town-summaries div h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#town-summaries div h2 {
+    font-size: .8rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#town-summaries div p {
+    text-align: center;
+}
+
+#town-summaries div img {
+    width: 100%;
+    max-width: 20rem;
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+/* image-galley css */
+#imageGalleryTitle {text-align: center;}
+.imageContainer img {
+    margin: 5px auto;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.imageContainer figure {
+    padding: 0;
+    margin: 0;
+}
+.figcaption-hide {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.imageContainer figure img {
+    display: block;
+    margin: 10px;
+    filter: blur(0em);
+    transition: filter 10s;
+}
+[data-src] {
+    filter: blur(0.2em);
+}
+
+/*-------- FORM ---------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid#8fa4e9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #8fa4e9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #e04f2f;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.range-bar, form label.range-bar input {
+    display: block;
+}
+
+form label.range-bar {
+    color:#e04f2f;
+    padding-top: 1rem;
+}
+
+form label.range-bar input {
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    border: 1px solid black;
+    background-color: #8ecae6;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 2% 10px 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+#more-info {
+    width: 100%;
+    height: 10rem;
+}
+
+footer {
+    border: 1px solid black;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 3px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
