@@ -1,3 +1,8 @@
+function toggleMenu()
+{
+    document.getElementById("mainNav").classList.toggle("hidden");
+}
+
 let currentDate = new Date();
 
 
