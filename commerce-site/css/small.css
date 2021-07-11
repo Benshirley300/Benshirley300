@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: "Montserrat", Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #22333B;
+}
+header img {float: left; margin-right: .5rem; width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem; color: #eae0d5;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #eae0d5;}
+h1, h2, h3 {
+    font-family: "Merriweather", Geneva, sans-serif;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #eae0d5;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #c6ac8f;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    font-family: "Montserrat", Verdana, sans-serif;
+}
+
+figure {
+    text-align: center;
+}
+#color-scheme-img {
+    width: 400px;
+}
+figcaption {
+    text-align: center;
+    font-size: .7rem;
+}
+p {
+    text-align: left;
+}
+#persona-1-img, #persona-2-img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #22333b;
+    padding: .5rem 2%;
+    
+}
+footer p {
+    text-align: center;
+    font-family: "Montserrat", Verdana, sans-serif;
+    color: #eae0d5;
+}
+footer p a:visited {
+    color: #eae0d5;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
