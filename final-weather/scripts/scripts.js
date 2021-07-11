@@ -3,6 +3,7 @@ function toggleMenu()
     document.getElementById("mainNav").classList.toggle("hidden");
 }
 
+
 let currentDate = new Date();
 
 
@@ -42,15 +43,21 @@ for (i = 1; i <= 5; ++i)
       ++x;
     }
 }
+if (document.getElementById("title") == "Preston")
+{
+  if (currentDate.getDay() != 5)
+  {
+      document.getElementById("fridayAnnouncement").classList.add("not-friday");
+  }
+  else
+  {
+      document.getElementById("fridayAnnouncement").classList.remove("not-friday");
+  }
+}
 
-if (currentDate.getDay() != 5)
-{
-    document.getElementById("fridayAnnouncement").classList.add("not-friday");
-}
-else
-{
-    document.getElementById("fridayAnnouncement").classList.remove("not-friday");
-}
+
+
+
 
 
 WebFont.load({

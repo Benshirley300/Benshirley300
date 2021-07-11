@@ -122,6 +122,27 @@ figcaption {
 }
 .article p, .article h3 {margin: 0; padding: 5px;}
 
+.eventSection {
+    border: 1px solid black;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.eventSection h3 {
+    padding: 0 2%;
+}
+
+#events {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#events .eventLi {
+    display: block;
+    background-color: transparent;
+}
+
 .contactUs {
     border: 1px solid black;
     background-color: #8ecae6;
