@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page for the weather in Preston.">
+    <title>Home: Pocatello Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+    <body>
+        <header class="clearfix">
+            <a href="#"><img id="logo" src="images/logo.png" alt="Logo image of sun"></a>
+            <div>
+            <h1>Pocatello Chamber of Commerce</h1>
+            <h2>Supporting the Businesses of Pocatello Idaho</h2>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="clearfix hidden" id="mainNav">
+                <li class="active"><a href="index.html" id="homeNav">Home</a></li>
+                <li class=""><a href="pocatello.html">Pocatello</a></li>
+                <li class=""><a href="join.html">Join the Chamber</a></li>
+                <li class=""><a href="directory.html">Directory</a></li>
+                <li class=""><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Welcome to the Chamber of Commerce for the City of Pocatello Idaho</h1>
+            <div id="home-images">
+                    <img id="left-arrow" src="images/left-arrow.png" onclick="switchLeft()">
+                    <img id="main-image" src="images/pic-1.jpg">
+                    <img id="right-arrow" src="images/right-arrow.png" onclick="switchRight()">
+            </div>
+            <figure id="small-medium-image">
+                <img src="images/pic-1.jpg"> 
+                <figcaption>Bannock County Courthouse</figcaption>
+            </figure>
+            <h2 id="local-shoutout">Local Shoutout!</h2>
+            <div id="local-companies">
+                
+            </div>
+            <div id="call-to-action">
+                <a href="join.html"><h2>Help Support Local Businesses! Join the Chamber of Commerce today!</h2></a>
+            </div>    
+            
+            <section class="forecast">
+                <div id="forecast-1">
+                    <h5 id="day1"></h5>
+                    <div id="forecast-1-img"></div>
+                    <p>High: <span id="forecast-1-high"></span>&deg;</p>
+                </div>
+                <div id="forecast-2">
+                    <h5 id="day2"></h5>
+                    <div id="forecast-2-img"></div>
+                    <p>High: <span id="forecast-2-high"></span>&deg;</p>
+                </div>
+                <div id="forecast-3">
+                    <h5 id="day3"></h5>
+                    <div id="forecast-3-img"></div>
+                    <p>High: <span id="forecast-3-high"></span>&deg;</p>
+                </div>
+            </section>
+        
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>1500 Main St<br>Pocatello, ID 83204</p>
+                <a href="#" target="__blank"><p>www.pocatellochamberofcommerce.com</p></a>
+                <p>&#9742 208-123-4567</p>
+                <img src="images/pic-4.jpg" alt="Chamber of Commerce" id="contact-us-img">
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Ben Shirley &middot; &copy; <span id="currentYear"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/weather-api.js"></script>
+        <script src="scripts/info.json"></script>
+        <script src="scripts/home.js"></script>
+        <script src="scripts/scripts.js"></script>
+  </body>
+</html>

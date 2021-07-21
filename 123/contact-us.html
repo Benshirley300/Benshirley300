@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page for the weather in Preston.">
+    <title>Home: Pocatello Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+    <body>
+        <header class="clearfix">
+            <a href="#"><img id="logo" src="images/logo.png" alt="Logo image of sun"></a>
+            <div>
+            <h1>Pocatello Chamber of Commerce</h1>
+            <h2>Supporting the Businesses of Pocatello Idaho</h2>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="clearfix hidden" id="mainNav">
+                <li class=""><a href="index.html" id="homeNav">Home</a></li>
+                <li class=""><a href="pocatello.html">Pocatello</a></li>
+                <li class=""><a href="join.html">Join the Chamber</a></li>
+                <li class=""><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="map-container">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93574.27895144529!2d-112.56604810994234!3d42.868702470985745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1626828810968!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div id="map-label">
+                    <h3>Pocatello Chamber of Commerce</h3>
+                    <p>1500 S Main St.</p>
+                    <p>Pocatello, ID 83201</p>
+                    <p>&#9742 208-123-4567</p>
+                    <p>Website: pocatellochamberofcommerce.org</p>
+                </div>
+            </div>
+            <form method="get" action="thanks-contact.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="top">Name* <input type="text" name="full-name" pattern="[A-Za-z\s]{5,}" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@somewhere.com" required></label>
+                    <label class="top">Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>More Information</legend>
+                    <textarea name="more-info" id="more-info"></textarea>
+                </fieldset>
+                
+                <input type="submit" class="submitBtn" value="Contact the Chamber">
+        
+              </form>
+        </main>
+
+        <footer>
+            <p>Ben Shirley &middot; &copy; <span id="currentYear"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/scripts.js"></script>
+  </body>
+</html>

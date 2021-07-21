@@ -1,0 +1,39 @@
+@media (min-width: 1140px)
+{
+    #home-images {
+        width: 1010px;
+        display: grid;
+        grid-template-columns: 200px 600px 200px;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 5px;
+        margin:  10px auto;
+    }
+    #home-images img {
+        border-radius: 10px;
+    }
+    #right-arrow {
+        grid-column: 3 / 4;
+        
+    }
+    #left-arrow {
+        grid-column : 1 / 2;
+        
+    }
+    #small-medium-image {
+        display: none;
+    }
+    .contact-us {
+        display: grid;
+        grid-template-columns: auto 600px;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    #contact-us-img {
+        display: block;
+        grid-column: 2 / 3;
+        grid-row: 1 / 6;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+}
